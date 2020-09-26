@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Monofett&family=Sigmar+One&family=VT323&display=swap');
-/* rock-salt */
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 
 .basic-grid {
     display: grid;
@@ -40,4 +41,7 @@
 .content h1{
     font-family: 'Sigmar One', cursive;
     /* font-family: 'Monofett', cursive; */
+}
+.content h2{
+    font-family: 'Carter One', cursive;
 }
