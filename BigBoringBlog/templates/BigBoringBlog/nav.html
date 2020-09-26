@@ -1,0 +1,19 @@
+{% load static %}
+
+<style>
+    @import url("{% static 'BigBoringBlog/css/nav.css' %}");
+</style>
+
+<nav>
+    <div class="logo">
+        <h3>BigBoringBlog</h3>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="{% url 'BigBoringBlog:home' %}">Home</a>
+        </li>
+        <li>
+            <a href="{% url 'BigBoringBlog:about' %}">About</a>
+        </li>
+    </ul>
+</nav>

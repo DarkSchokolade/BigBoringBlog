@@ -1,0 +1,20 @@
+{% extends 'BigBoringBlog/main.html' %}
+
+{% block content %}
+
+<section class="basic-grid" style="margin-left: 23px; margin-right: 23px;">
+{% for board in boards %}
+    <a href="{% url 'BigBoringBlog:topics' board.id %}">
+        <div class="card">
+            <div class="content">
+                <h1>{{ board }}</h1>
+                <hr>
+                <p>{{ board.description }}</p>
+            </div>
+        </div>
+    </a>
+
+{% endfor %}
+</section>
+
+{% endblock %}

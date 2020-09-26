@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 7vh;
+    background-color: #beef00;
+    margin-bottom: 46px;
+}
+
+.logo {
+    color: rgb(26, 25, 25);
+    font-size: 27px;
+    padding-left: 10px;
+}
+
+.nav-links {
+    display: flexbox;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links li {
+    list-style: none;
+    text-align: center;
+    padding-top: 14px;
+    
+}
+.nav-links a {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(112, 16, 112);
+}
+
+ .footer {
+    background: #beef00;
+    color: #353535;
+    flex: 0 0 50px;/*or just height:50px;*/
+    margin-top: auto;
+    bottom: 0;
+    left: 0;
+ }
+
+ .about {
+     text-align: center;
+     color: #beef00;
+     font-family: 'Righteous', cursive;
+ }
+ .about a {
+     color: rgb(112, 24, 112);
+ }

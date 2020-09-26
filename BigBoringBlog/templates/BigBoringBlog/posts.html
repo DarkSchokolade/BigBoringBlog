@@ -1,0 +1,24 @@
+{% extends 'BigBoringBlog/main.html' %}
+
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <button class="post-btn" type="submit">POST IT!</button>
+</form>
+
+<section class="basic-grid" style="margin-left: 23px; margin-right: 23px;">
+{% for post in posts %}
+    <div class="card">
+        <div class="content">
+            <h2>{{ post }}</h2>
+            <hr>
+            <p>By: {{ post.created_by }}</p>
+            <p>On: {{ post.created_at }}</p>
+        </div>
+    </div>
+{% endfor %}
+</section>
+
+{% endblock %}

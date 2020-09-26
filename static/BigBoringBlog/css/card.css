@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Sigmar+One&family=VT323&display=swap');
+/* rock-salt */
+
+.basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    background: #353535;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: #525151;
+ }
+
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #beef00;
+    
+}
+.content p{
+    font-family: 'VT323', monospace;
+    font-size: large;
+}
+.content h1{
+    font-family: 'Sigmar One', cursive;
+    /* font-family: 'Monofett', cursive; */
+}
