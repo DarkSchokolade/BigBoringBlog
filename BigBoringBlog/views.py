@@ -44,7 +44,7 @@ def CommentSection(request, p_key):
             post.save()
 
     posts = topic.posts.all().order_by('-created_at')
-    context = {'topic': topic, 'posts': posts, 'form':form}
+    context = {'topic': topic, 'posts': posts, 'form': form}
     return render(request, 'BigBoringBlog/posts.html', context)
 
 def AboutPage(request):
