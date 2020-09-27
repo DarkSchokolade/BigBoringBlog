@@ -20,7 +20,11 @@ a {
     justify-content: center;
     margin-bottom: 20px;
 }
-
+.center h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #beef00;
+}
 .create-btn {
     width: 340px;
     height: 70px;
