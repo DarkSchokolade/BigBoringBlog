@@ -6,7 +6,7 @@
     <h1>Comments</h1>
 </div>
 
-<form action="" method="post">
+<form action="" method="post" autocomplete="off">
     {% csrf_token %}
     {{ form.as_p}}
     <button class="post-btn" type="submit">POST IT!</button>

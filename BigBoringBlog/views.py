@@ -42,6 +42,7 @@ def CommentSection(request, p_key):
             post = form.save(commit=False)
             post.topic = topic
             post.save()
+            form = PostForm()
 
     posts = topic.posts.all().order_by('-created_at')
     context = {'topic': topic, 'posts': posts, 'form': form}
